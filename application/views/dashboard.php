@@ -7,7 +7,7 @@
     <section class="content-header">
       <h1>
         A2Z
-        <small>Dash</small>
+        <small>Dashboard</small>
       </h1>
       
     </section>
@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-md-12">
           <!-- The time line -->
-          dashboards
+          Dashboards
         </div>
         <!-- /.col -->
       </div>
