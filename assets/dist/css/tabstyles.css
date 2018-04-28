@@ -1,0 +1,122 @@
+
+
+/*****************************/
+/* Fill up */
+/*****************************/
+/*.tabs-style-fillup nav ul{
+    border-bottom: 1px solid #edc16a;
+}*/
+
+.tabs-style-fillup nav ul li a {
+	padding: 10px 0;
+	line-height: 1;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.tabs-style-fillup nav ul li:last-child a {
+	border: none;
+}
+
+.tabs-style-fillup nav ul li.tab-current {
+	z-index: 100;
+}
+
+/*.tabs-style-fillup nav ul li.tab-current a {
+	color: #fff;
+}*/
+.tabs-style-fillup nav ul li.tab-current{text-decoration: none !important}
+
+.tabs-style-fillup nav ul li a::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	height: calc(100% + 1px);
+	border-bottom: 3px solid #edc16a;
+	background:#ecf0f5;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+        text-decoration: none;
+}
+
+.tabs-style-fillup nav ul li.tab-current a::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+.tabs-style-fillup nav ul li a span,
+.tabs-style-fillup .fa::before {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0,5px,0);
+	transform: translate3d(0,5px,0);
+}
+
+.tabs-style-fillup nav ul li a span {
+	display: block;
+	font-weight: 700;
+	font-size: 0.7em;
+	line-height: 1.5;
+}
+
+
+
+.tabs-style-fillup .fa::before {
+	display: block;
+	margin: 0;
+}
+
+
+.tabs-style-fillup nav ul li.tab-current a span,
+.tabs-style-fillup li.tab-current .fa::before {
+	-webkit-transform: translate3d(0,-5px,0);
+	transform: translate3d(0,-5px,0);
+}
+a {
+	color: #222d32;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	color: #616161;
+	text-decoration: none;
+	outline: none;
+}
+.font-tab{font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; font-size: 18px !important;font-weight: lighter !important;margin-top: 5px;}
+.cs-tab ul li a {font-size: 21px;}
+.cs-tab td {text-align: left;}
+.cs-tab #datatable_length > label {
+    float: left;
+}
+.ff {
+    padding-top: 20px !important;
+}
+.pagination li a {
+    font-size: 17px !important;
+}
+.cs-tab .dataTables_info {
+    text-align: left !important;
+}
+.cs-tab td a.btn {
+    display: table !important;
+    float: none !important;
+    margin: 0 auto !important;
+}
+.fa.fa-eye {
+    vertical-align: top;
+}
+table.dataTable thead > tr > th{padding-right:10px !important;}
+.dataTables_length label{float:left;}
+.cs-tab .pagination {
+    margin-top: 15px !important;
+}
